@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil - Puissance 4 en Profondeur</title>
+    <link rel="stylesheet" href="./../css/index.css">
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <style>
+        #tooltip {
+            position: absolute;
+            padding: 8px 12px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 5px;
+            transition: transform 0.1s;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            pointer-events: none;
+        }
+
+        #tooltip a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        #tooltip a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenu">
+        <header>
+            <nav>
+                <ul class="menu" aria-label="Menu principal">
+                    <li><a href="./presentation_du_jeu.html">Présentation du jeu</a></li>
+                    <li><a href="./algorithme_du_jeu.html">Algorithme du jeu</a></li>
+                    <li><a href="./presentation_ia.html">Intelligence Artificielle</a></li>
+                    <li><a href="./presentation_groupe.html">À propos de nous</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenu Principal -->
+        <h1>Puissance 4 en Profondeur</h1>
+        <section>
+            <h2>Contexte du Projet</h2>
+            <p>En 2022, à l'Université d'Angers, nous avons transformé le jeu classique "Puissance 4" dans le cadre d'un projet de fin d'année en une expérience immersive, explorant les facettes avancées de ce jeu simple mais stratégique.</p>
+
+            <h2>Notre Ambition</h2>
+            <p>Notre objectif a été de transcender le jeu classique en une plateforme complète, permettant aux joueurs novices d'apprendre, aux experts de s'affronter, et aux passionnés d'algorithmique d'explorer le cœur de son intelligence artificielle.</p>
+
+            <h2>Membres du groupe</h2>
+            <p>Nous sommes Barry Mamadou Moussa & Bankouezi Richard Hofrance, deux étudiants passionnés par les défis algorithmiques et l'application de l'intelligence artificielle aux jeux.</p>
+
+            <h2 id="myImage">Notre Aventure</h2>
+            <p>Au-delà de la simulation du jeu, nous nous sommes immergés dans les stratégies avancées de Puissance 4, implémentant des méthodes d'optimisation, et concevant une IA robuste.</p>
+
+            <h2>Conclusion</h2>
+            <p>À travers ce projet, nous avons redécouvert Puissance 4 comme un terrain fertile pour les innovations en IA, reflétant sa complexité stratégique. Nous sommes fiers de notre réalisation et espérons inspirer d'autres passionnés.</p>
+        </section>
+        <div class="footer-basic">
+            <footer>
+                <!-- Section des médias sociaux -->
+                <div class="social-icons">
+                    <a href="#" class="icon-link"><i class="icon ion-social-instagram"></i></a>
+                    <a href="#" class="icon-link"><i class="icon ion-social-snapchat"></i></a>
+                    <a href="#" class="icon-link"><i class="icon ion-social-twitter"></i></a>
+                    <a href="#" class="icon-link"><i class="icon ion-social-facebook"></i></a>
+                </div>
+        
+                <!-- Image au centre -->
+                <div class="footer-image">
+                    <img src="./../images/image2.jpg" alt="Image descriptive">
+                </div>
+        
+                <!-- Section des liens -->
+                <div class="footer-links">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="./presentation_du_jeu.html">Présentation du Jeu</a></li>
+                        <li class="list-inline-item"><a href="./algorithme_du_jeu.html">Algorithme du Jeu</a></li>
+                        <li class="list-inline-item"><a href="./presentation_ia.html">IA du Jeu</a></li>
+                        <li class="list-inline-item"><a href="./presentation_groupe.html">Notre Équipe</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Section des informations de contact -->
+                <div class="footer-contacts">
+                    <p class="contact-item"><a href="mailto:mussabarry.mb@icloud.com"> BARRY Moussa</a></p>
+                    <p class="contact-item"><a href="mailto:richardhofrance.bankouezi@etud.univ-angers.fr">Richard BANKOUEZI</a></p>
+                </div>
+        
+                <!-- Droits d'auteur -->
+                <p class="copyright">© 2022 Université d'Angers. Tous droits réservés.</p>
+            </footer>
+        </div>
+        
+
+    </div>
+
+    <script>
+        document.querySelector('#myImage').addEventListener('mousemove', function (e) {
+            const tooltip = document.getElementById('tooltip');
+
+            // Position de l'info-bulle par rapport à la position de la souris
+            tooltip.style.left = e.pageX + 'px';
+            tooltip.style.top = e.pageY + 'px';
+            tooltip.style.display = 'block';
+        });
+
+        document.querySelector('#myImage').addEventListener('mouseout', function () {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.style.display = 'none';
+        });
+
+    </script>
+</body>
+
+</html>
