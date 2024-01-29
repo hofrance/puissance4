@@ -1,0 +1,77 @@
+/* Styles généraux pour le mode sombre */
+body {
+    background-color: #121212; /* Couleur de fond sombre */
+    color: #2c2a2a; /* Couleur du texte clair */
+    font-family: 'Arial', sans-serif; /* Police par défaut */
+}
+
+#contenu {
+    padding: 20px;
+}
+
+/* Styles pour la navigation */
+.navbar {
+    background-color: #1c1c1c; /* Fond sombre pour la barre de navigation */
+}
+
+.menu .active {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.menu li {
+    margin: 5px 0;
+}
+
+/* Styles pour les titres de sections */
+h1, h2 {
+    color: #ffffff; /* Couleur du texte clair pour les titres */
+}
+
+/* Styles pour le contenu des sections */
+.section-content {
+    background-color: #282828; /* Fond légèrement plus clair pour les sections */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les images et carrousels */
+.image-library, .carousel {
+    /* Styles spécifiques pour les images et carrousels si nécessaire */
+}
+
+/* Styles pour le pied de page */
+.footer-basic {
+    background-color: #1c1c1c; /* Fond sombre pour le footer */
+    color: #ffffff; /* Texte clair */
+    padding: 20px 0;
+}
+
+.social-icons a {
+    color: #ffffff; /* Icônes de réseaux sociaux en blanc */
+}
+
+.footer-links a {
+    color: #ffffff; /* Liens en blanc */
+}
+
+.footer-contacts {
+    color: #ffffff; /* Contacts en blanc */
+}
+
+/* Autres styles spécifiques */
+#tooltip {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(22, 20, 20);
+}
+
+#tooltip a {
+    color: #FFD700;
+}
+
+#tooltip a:hover {
+    text-decoration: underline;
+}
+
+/* Styles supplémentaires si nécessaires */

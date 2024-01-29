@@ -1,0 +1,3 @@
+/home/rbankouezi/test1/puissance4_rendu_final/build/CMakeFiles/edit_cache.dir
+/home/rbankouezi/test1/puissance4_rendu_final/build/CMakeFiles/rebuild_cache.dir
+/home/rbankouezi/test1/puissance4_rendu_final/build/CMakeFiles/puissance4.out.dir
