@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://leria-etud.univ-angers.fr/~rbankouezi/html/presentation_groupe.html</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>dayly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://leria-etud.univ-angers.fr/~rbankouezi/html/presentation_du_jeu.html</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>dayly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://leria-etud.univ-angers.fr/~rbankouezi/html/algorithme_du_jeu.html</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>dayly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://leria-etud.univ-angers.fr/~rbankouezi/html/presentation_ia.html</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>dayly</changefreq>
         <priority>0.8</priority>
     </url>
 </urlset>

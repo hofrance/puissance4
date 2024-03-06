@@ -4,97 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentation jeu à la puissance 4</title>
+    <title>Page d'accueil - Puissance 4 en Profondeur</title>
     <link rel="stylesheet" href="./../css/index.css">
-
-    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div id="contenu" id="iconnect">
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li><a href="./presentation_du_jeu.html">Présentation du jeu</a></li>
-                    <li><a href="./algorithme_du_jeu.html">Algorithme du jeu</a></li>
-                    <li><a href="./presentation_ia.html">Intelligence artificielle du code</a></li>
-                    <li><a href="./presentation_groupe.html">Présentation du groupe</a></li>
-                </ul>
-            </nav>
-           
-              
-        </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Puissance 4 en Profondeur</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./presentation_du_jeu.html">Présentation du jeu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./algorithme_du_jeu.html">Algorithme du jeu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./presentation_ia.html">Intelligence Artificielle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./presentation_groupe.html">À propos de nous</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <h1>Puissance 4 : Une immersion profonde</h1>
 
-        <section id="historique">
+    <!-- Contenu principal -->
+    <div class="container mt-4">
+        <h1 class="text-center">Puissance 4 : Une immersion profonde</h1>
+
+        <section id="historique" class="my-4">
             <h2>Histoire du jeu</h2>
             <p>
-                Le Puissance 4 est né en 1974 et a été breveté par Howard Wexler et Ned Strong. Depuis lors, il a traversé les âges pour devenir l'un des jeux les plus populaires et intemporels. Joué dans les cours d'école, les maisons et même professionnellement lors de tournois, il a captivé des générations entières.
+                Le Puissance 4 est né en 1974 et a été breveté par Howard Wexler et Ned Strongin. Depuis lors, il a traversé les âges pour devenir l'un des jeux les plus populaires et intemporels. Joué dans les cours d'école, les maisons et même professionnellement lors de tournois, il a captivé des générations entières.
             </p>
         </section>
 
-        <section id="regles">
+        <section id="regles" class="my-4">
             <h2>Comprendre les règles</h2>
             <p>
                 Le Puissance 4 est joué sur une grille verticale de 6x7. Deux joueurs s'affrontent en plaçant alternativement un jeton de leur couleur dans l'une des sept colonnes, qui tombe dans le rang le plus bas disponible. Le premier joueur à aligner quatre de ses jetons soit horizontalement, verticalement ou en diagonale remporte la partie.
             </p>
         </section>
 
-        <section id="strategie">
+        <section id="strategie" class="my-4">
             <h2>Stratégie : bien plus qu'un simple jeu</h2>
             <p>
                 Bien que les règles soient simples, le Puissance 4 est profondément stratégique. La victoire nécessite à la fois de la planification et de l'adaptabilité, car chaque mouvement de votre adversaire peut potentiellement bouleverser vos plans. De nombreux algorithmes ont été élaborés pour maîtriser ce jeu, faisant de lui un sujet d'étude fascinant pour les passionnés de jeux de stratégie.
             </p>
         </section>
 
-        <section id="ia">
+        <section id="ia" class="my-4">
             <h2>Intelligence Artificielle et Puissance 4</h2>
             <p>
                 Avec l'avènement de la technologie, le Puissance 4 est également devenu un terrain de jeu pour les algorithmes d'intelligence artificielle. Les chercheurs ont utilisé ce jeu comme moyen d'entraîner et de tester des systèmes IA, faisant de lui bien plus qu'un simple jeu de société. Les versions modernes permettent aux joueurs de s'opposer à des adversaires IA de différents niveaux de compétence, offrant un défi adapté à chaque joueur.
             </p>
         </section>
-        <div class="footer-basic">
-            <footer>
-                <!-- Section des médias sociaux -->
-                <div class="social-icons">
-                    <a href="#" class="icon-link"><i class="icon ion-social-instagram"></i></a>
-                    <a href="#" class="icon-link"><i class="icon ion-social-snapchat"></i></a>
-                    <a href="#" class="icon-link"><i class="icon ion-social-twitter"></i></a>
-                    <a href="#" class="icon-link"><i class="icon ion-social-facebook"></i></a>
-                </div>
-        
-                <!-- Image au centre -->
-                <div class="footer-image">
-                    <img src="./../images/image2.jpg" alt="Image descriptive">
-                </div>
-        
-                <!-- Section des liens -->
-                <div class="footer-links">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="./presentation_du_jeu.html">Présentation du Jeu</a></li>
-                        <li class="list-inline-item"><a href="./algorithme_du_jeu.html">Algorithme du Jeu</a></li>
-                        <li class="list-inline-item"><a href="./presentation_ia.html">IA du Jeu</a></li>
-                        <li class="list-inline-item"><a href="./presentation_groupe.html">Notre Équipe</a></li>
-                    </ul>
-                </div>
-        
-                <!-- Section des informations de contact -->
-                <div class="footer-contacts">
-                    <p class="contact-item"><a href="mailto:mussabarry.mb@icloud.com"> BARRY Moussa</a></p>
-                    <p class="contact-item"><a href="mailto:richardhofrance.bankouezi@etud.univ-angers.fr">Richard BANKOUEZI</a></p>
-                </div>
-        
-                <!-- Droits d'auteur -->
-                <p class="copyright">© 2022 Université d'Angers. Tous droits réservés.</p>
-            </footer>
-        </div>
-        
+
+        <!-- Footer -->
+        <footer class="footer-basic mt-4">
+            <!-- Médias sociaux -->
+            <div class="social-icons">
+                <a href="#" class="icon-link"><i class="icon ion-social-instagram"></i></a>
+                <a href="#" class="icon-link"><i class="icon ion-social-snapchat"></i></a>
+                <a href="#" class="icon-link"><i class="icon ion-social-twitter"></i></a>
+                <a href="#" class="icon-link"><i class="icon ion-social-facebook"></i></a>
+            </div>
+
+            <!-- Contacts -->
+            <div class="footer-contacts mt-3">
+                <p class="contact-item"><a href="mailto:mussabarry.mb@icloud.com">BARRY Moussa</a></p>
+                <p class="contact-item"><a href="mailto:richardhofrance.bankouezi@etud.univ-angers.fr">Richard BANKOUEZI</a></p>
+            </div>
+
+            <!-- Droits d'auteur -->
+            <p class="text-center mt-3">© 2022 Université d'Angers. Tous droits réservés.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

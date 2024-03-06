@@ -1,168 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
-    <title>Présentation de l'intelligence artificielle</title>
-
-    <meta name="google-site-verification" content="2AVvByYs21Jnljtvy6iYBBqDNwQLWpAEGuhAzKe5JYg" />
-    <link rel="stylesheet" href="./../css/index.css">
-    <meta name="description" content="Explorez la stratégie derrière l'intelligence artificielle de Puissance 4. Découvrez comment l'IA évalue les coups, utilise la table de décision et tire avantage des situations stratégiques pour optimiser ses mouvements.">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
+    <meta name="google-site-verification" content="2AVvByYs21Jnljtvy6iYBBqDNwQLWpAEGuhAzKe5JYg" />
+    <title>IA- Puissance 4 en Profondeur</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<style>
-    .menu .active {
-        font-weight: bold;
-        color: #ff6600;
-    }
-
-    .menu li {
-        margin: 5px 0;  /* Ajout d'une marge pour espacer les éléments du menu */
-    }
-</style>
-
-
-
-<script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "Bankouezi Richard",
-      "url": "URL de votre site",
-      "image": "URL de votre photo",
-      "birthPlace": "Pointe-Noire(République du Congo)",
-      "jobTitle": "Etudiant en Informatique",
-      "alumniOf": "Université d'Angers",
-      "description": "Découvrez BANKOUEZI Richard - passionné par l'informatique, l'innovation et l'agrobusiness. De l'entrepreneuriat agricole à l'informatique, explorez mon monde, mes projets et mon blog pour un aperçu de ma vision pour un futur numérique et durable."
-    }
-    </script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .image-library img { width: 100%; height: auto; }
+        .grid-container { display: grid; grid-gap: 15px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+        .footer { background: #f8f9fa; }
+    </style>
 </head>
-
 <body>
-
-    <div id="contenu">
-
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li><a href="./presentation_du_jeu.html">Présentation du jeu</a></li>
-                    <li><a href="./algorithme_du_jeu.html">Algorithme du jeu</a></li>
-                    <li><a href="./presentation_ia.html" class="active">Intelligence artificielle du jeu</a></li>
-                    <li><a href="./presentation_groupe.html">Présentation du groupe</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-
-            <h1>Puissance 4 (Connect 4)</h1>
-
-            <section>
-                <h2>Stratégie de l'intelligence artificielle</h2>
-
-                <p>
-                    L'intelligence artificielle (IA) de Puissance 4 repose sur une approche combinée : une évaluation heuristique pour pondérer les coups, et une exploration en profondeur pour anticiper les mouvements de l'adversaire.
-                </p>
-
-                <p>
-                    En début de partie, l'IA privilégie les colonnes centrales, considérées comme stratégiquement avantageuses. Elle utilise également une <a href="">table de choix</a> pour évaluer les mouvements potentiels. Si cette table est vide, l'IA initialise les valeurs en fonction des colonnes du milieu.
-                </p>
-
-                <p>
-                    Au fil de la partie, l'IA augmente sa profondeur de recherche. Après 14 tours, elle analyse jusqu'à 10 mouvements à l'avance pour chaque colonne, ajustant les poids dans la <a href="">table de choix</a> en fonction des résultats anticipés.
-                </p>
-
-                <p>
-                    Les <a href="">situations avantageuses</a> jouent un rôle crucial. L'IA cherche à créer des configurations qui lui donnent un avantage tactique ou à bloquer celles de l'adversaire. Ces configurations peuvent être des alignements presque complets ou des pièges tendus pour l'adversaire.
-                </p>
-            </section>
-
-            <section>
-                <h2>La table de décision de l'IA</h2>
-
-                <p>
-                    La table de décision est un outil essentiel pour l'IA. Elle contient sept valeurs, une pour chaque colonne du plateau. Chaque valeur est un "poids" qui indique la qualité stratégique de cette colonne. Plus le poids est élevé, plus l'IA est susceptible de jouer dans cette colonne.
-                </p>
-
-                <p>
-                    En analysant plusieurs mouvements à l'avance, l'IA peut augmenter ou diminuer ces poids en fonction des résultats anticipés. Par exemple, si jouer dans une colonne spécifique entraînerait probablement une victoire dans quelques tours, cette colonne recevrait un poids plus élevé.
-                </p>
-            </section>
-
-            <section class="image-library">
-                <h2>Situations avantageuses</h2>
-            
-                <p>
-                    Les situations avantageuses sont des configurations spécifiques...
-                </p>
-            
-                <div class="grid-container">
-                    <figure>
-                        <img src="./../images/coup_avantageux0.png" alt="Situation avantageuse 1">
-                        <figcaption>Exemple de situation avantageuse créée par l'IA.</figcaption>
-                    </figure>
-            
-                    <figure>
-                        <img src="./../images/coup_avantageux2.png" alt="Situation avantageuse 2">
-                        <figcaption>Un autre exemple montrant une stratégie avantageuse.</figcaption>
-                    </figure>
-            
-                    <figure>
-                        <img src="./../images/exemple_de_victoires.png" alt="Exemple de victoire grâce à une situation avantageuse">
-                        <figcaption>Comment l'IA utilise la table de décision pour optimiser ses mouvements.</figcaption>
-                    </figure>
-                </div>
-            </section>
-            
-        </main>
-        <div class="footer-basic">
-            <footer>
-                <!-- Section des médias sociaux -->
-                <div class="social-icons">
-                    <a href="#" class="icon-link"><i class="icon ion-social-instagram"></i></a>
-                    <a href="#" class="icon-link"><i class="icon ion-social-snapchat"></i></a>
-                    <a href="#" class="icon-link"><i class="icon ion-social-twitter"></i></a>
-                    <a href="#" class="icon-link"><i class="icon ion-social-facebook"></i></a>
-                </div>
-        
-                <!-- Image au centre -->
-                <div class="footer-image">
-                    <img src="./../images/image2.jpg" alt="Image descriptive">
-                </div>
-        
-                <!-- Section des liens -->
-                <div class="footer-links">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="./presentation_du_jeu.html">Présentation du Jeu</a></li>
-                        <li class="list-inline-item"><a href="./algorithme_du_jeu.html">Algorithme du Jeu</a></li>
-                        <li class="list-inline-item"><a href="./presentation_ia.html">IA du Jeu</a></li>
-                        <li class="list-inline-item"><a href="./presentation_groupe.html">Notre Équipe</a></li>
-                    </ul>
-                </div>
-        
-                <!-- Section des informations de contact -->
-                <div class="footer-contacts">
-                    <p class="contact-item"><a href="mailto:mussabarry.mb@icloud.com"> BARRY Moussa</a></p>
-                    <p class="contact-item"><a href="mailto:richardhofrance.bankouezi@etud.univ-angers.fr">Richard BANKOUEZI</a></p>
-                </div>
-        
-                <!-- Droits d'auteur -->
-                <p class="copyright">© 2022 Université d'Angers. Tous droits réservés.</p>
-            </footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Puissance 4 en Profondeur</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./presentation_du_jeu.html">Présentation du jeu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./algorithme_du_jeu.html">Algorithme du jeu</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./presentation_ia.html">Intelligence Artificielle <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./presentation_groupe.html">À propos de nous</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+
+    <main class="container mt-5">
+        <h1 class="mb-4">Intelligence Artificielle du Puissance 4</h1>
         
-    </div>
+        <section class="mb-4">
+            <h2 class="mb-3">Stratégie de l'IA</h2>
+            <p>L'intelligence artificielle de Puissance 4 combine analyse heuristique et exploration en profondeur pour prévoir les coups adverses, en privilégiant les positions stratégiques et en bloquant les opportunités de l'adversaire.</p>
+        </section>
 
-    
+        <section class="mb-4">
+            <h2 class="mb-3">Table de décision</h2>
+            <p>Notre IA utilise une table de décision pour évaluer le potentiel de chaque colonne, s'adaptant dynamiquement à l'évolution du jeu pour maximiser ses chances de victoire.</p>
+        </section>
 
+        <section class="image-library">
+            <h2 class="mb-3">Situations avantageuses</h2>
+            <div class="grid-container">
+                <img src="./../images/coup_avantageux1.png" alt="Stratégie avantageuse">
+                <img src="./../images/coup_avantageux2.png" alt="Tactique gagnante">
+                <img src="./../images/coup_avantageux3.png" alt="Blocage stratégique">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer mt-5 pt-4 border-top">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <h5>Contactez-nous</h5>
+                    <p><a href="mailto:mussabarry.mb@icloud.com" class="text-decoration-none">BARRY Moussa</a></p>
+                    <p><a href="mailto:richardhofrance.bankouezi@etud.univ-angers.fr" class="text-decoration-none">Richard BANKOUEZI</a></p>
+                </div>
+                <div class="col-sm-6">
+                    <h5>Suivez-nous</h5>
+                    <a href="#" class="text-dark mx-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="bi bi-snapchat"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
