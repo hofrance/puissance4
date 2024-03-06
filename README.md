@@ -1,4 +1,3 @@
-```markdown
 # Puissance 4
 
 Le projet Puissance 4 est une implémentation du jeu de stratégie classique en C++, utilisant la bibliothèque SFML pour l'interface graphique. Ce guide vous aidera à installer et à lancer le jeu sur votre machine.
@@ -15,11 +14,6 @@ Pour compiler et exécuter ce projet, assurez-vous que vous avez installé :
 
 La méthode d'installation de SFML dépend de votre système d'exploitation.
 
-#### Sur Ubuntu/Debian
-
-```bash
-sudo apt-get install libsfml-dev
-```
 
 #### Sur Fedora
 
