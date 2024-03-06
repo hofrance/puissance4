@@ -15,11 +15,18 @@ Pour compiler et exécuter ce projet, assurez-vous que vous avez installé :
 La méthode d'installation de SFML dépend de votre système d'exploitation.
 
 
+#### Sur Ubuntu/Debian
+
+```bash
+sudo apt-get install libsfml-dev
+```
+
 #### Sur Fedora
 
 ```bash
 sudo dnf install SFML
 ```
+
 
 #### Sur macOS (avec Homebrew)
 
