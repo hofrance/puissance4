@@ -43,7 +43,7 @@ Téléchargez et installez SFML depuis le [site officiel de SFML](https://www.sf
 1. Clonez le dépôt GitHub à l'aide de la commande suivante :
 
 ```bash
-git clone <https://github.com/hofrance/puissance4.git>
+git clone https://github.com/hofrance/puissance4.git
 ```
 
 
@@ -93,4 +93,9 @@ Les contributions à ce projet sont les bienvenues. N'hésitez pas à forker le 
 ## Licence
 
 Veuillez vous référer au fichier `LICENSE` pour connaître les détails de la licence sous laquelle ce projet est publié.
-```
+
+## Contactez moi
+- `BANKOUEZI Richard Hofrance`[Mon site Web ](https://www.richard-hofrance.com)
+- [Mon adresse mail ](mail:conct@richard-hofrance.com)
+
+
