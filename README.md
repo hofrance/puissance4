@@ -90,12 +90,10 @@ make
 
 Les contributions à ce projet sont les bienvenues. N'hésitez pas à forker le dépôt, apporter vos modifications, et soumettre une pull request.
 
-## Licence
 
-Veuillez vous référer au fichier `LICENSE` pour connaître les détails de la licence sous laquelle ce projet est publié.
 
 ## Contactez moi
-- `BANKOUEZI Richard Hofrance`[Mon site Web ](https://www.richard-hofrance.com)
-- [Mon adresse mail ](mail:conct@richard-hofrance.com)
+- `BANKOUEZI Richard Hofrance`[ visitez mon site Web ](https://www.richard-hofrance.com)
+- `contact@richard-hofrance.com`
 
 
